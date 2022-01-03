@@ -19,7 +19,7 @@ target:target,
                 use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
             },
             {
-                test:/\.js$/,
+                test:/\.jsx?$/,
                 exclude:/node_module/,
                 use:{
                     loader: "babel-loader"
@@ -30,6 +30,9 @@ target:target,
 
     plugins: [new MiniCssExtractPlugin()],
 
+    resolve: {
+        extensions: [".js", ".jsx"]
+    },
     devtool:"source-map",
     devServer: {
         contentBase: "./dist",
