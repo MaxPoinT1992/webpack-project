@@ -15,7 +15,7 @@ target:target,
     module:{
         rules:[
             {
-                test:/\.(s[a]|c)ss$/i,
+                test:/\.s?css$/i,
                 use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
             },
             {
