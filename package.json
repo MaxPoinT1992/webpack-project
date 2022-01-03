@@ -1,0 +1,15 @@
+{
+
+"private":true,
+  "scripts": {
+    "start": "webpack serve",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  
+  "devDependencies": {
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
